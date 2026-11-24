@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nailoong Caught Me. Then What? | An Interactive Site on Comfort & Data Ownership</title>
+<meta name="description" content="An interactive site about young people using Nailoong to let off steam, and about who gets to interpret our feelings once comfort moves into an AI system. Fictional scenario, 2046.">
+<!--
+  ============================================================
+  IMAGE SLOTS (left blank for your own images / Nailoong stickers)
+  ------------------------------------------------------------
+  5 image areas, 7 slots, all marked with class="img-slot":
+    01   Hero key visual (large)
+    02a  Sticker - failed the exam
+    02b  Sticker - wiped out
+    02c  Sticker - there, there
+    03   Sticky panel next to the three data layers
+    04   "Free vs paid" comparison
+    05   Closing image
+
+  To replace any slot:
+    1. Create an assets/ folder next to this file and drop images in;
+    2. Delete the whole <div class="img-slot">...</div> block;
+    3. Put <img src="assets/your-file.png" alt="..." class="user-img"> in its place.
+  No CSS edits needed (.user-img is already styled).
+
+  EXTRA: to make Nailoong actually SEND your stickers inside the live chat
+  demo, open script.js and fill in STICKER_ASSETS at the top of the file.
+  See image-slots.md for the full guide.
+  ============================================================
+-->
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="scroll-progress" id="progress" aria-hidden="true"></div>
+
+<header class="site-head">
+  <div class="wrap nav">
+    <div class="brand"><span class="dot" aria-hidden="true"></span>Nailoong caught me. Then what?</div>
+    <nav class="nav-links" aria-label="Page navigation">
+      <a href="#scene">One evening</a>
+      <a href="#practice">Relational work</a>
+      <a href="#simulator">Live demo</a>
+      <a href="#layers">Data layers</a>
+      <a href="#choice">The choice</a>
+      <a href="#own">Ownership</a>
+    </nav>
+    <a class="nav-cta" href="#simulator">Open the demo ↗</a>
+  </div>
+</header>
+
+<main>
+
+<!-- 01 · HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="rv in">
+      <span class="eyebrow">Emotional Data Ownership in 2046</span>
+      <h1>Nailoong caught me.<br><em>Then what?</em></h1>
+      <p class="lead">A failed exam, a late shift, a message left on read — you send a goofy little yellow dragon instead of explaining yourself, and somehow it helps. But when that comfort moves into an AI that logs and infers, being caught starts to come with a second bill.</p>
+      <div class="thesis"><strong>Core argument:</strong> even if people hold more rights over their personal data in 2046, platforms may still control how that data is interpreted and used. <strong>Having rights over data does not always mean having real control over it.</strong></div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#simulator">Try the chat →</a>
+        <a class="btn btn-ghost" href="#layers">Read the argument instead</a>
+      </div>
+      <p class="meta-line">An interactive site · inspired by the course essay <i>Nailoong, AI Comfort and Platform Power</i> · fictional scenario, no real data collected</p>
+    </div>
+
+    <div class="hero-visual rv in">
+      <!-- IMAGE SLOT 01 · replace the whole div with <img src="assets/xxx.png" alt="..." class="user-img"> -->
+      <img src="assets\failed-exam.png" alt="Nailoong key visual" class="user-img">
+      <div class="float-bubble" aria-hidden="true">
+        <span class="mini" aria-hidden="true"></span>
+        <span>hey. rough one?<br><small><span class="live-dot"></span> session live · 21:47 HKT</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · SCENE -->
+<section class="sec" id="scene">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">01 / ONE EVENING</span>
+      <div>
+        <h2>A silly reply, and a quiet record</h2>
+        <p class="sub">In 2046, Hong Kong. A student has had a very bad day.</p>
+      </div>
+    </div>
+    <div class="timeline rv">
+      <div class="tl"><span class="n">21:40</span><p>The exam is over. You don't want to explain it to anyone. You open the little yellow dragon's chat.</p></div>
+      <div class="tl"><span class="n">21:47</span><p>It throws back a nonsense joke and a tilted-head sticker. You exhale, halfway.</p></div>
+      <div class="tl"><span class="n">21:50</span><p>The app also notes: fourth time this week, which kind of comfort kept you here three minutes longer.</p></div>
+      <div class="tl"><span class="n">TOMORROW</span><p>From next time on it "gets" you better — and knows better what to show you.</p></div>
+    </div>
+    <blockquote class="pull rv">The question isn't whether it comforted me. It's: <span>who gets to decide what my bad day is eventually turned into.</span></blockquote>
+  </div>
+</section>
+
+<!-- 03 · RELATIONAL PRACTICE -->
+<section class="sec tinted" id="practice">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">02 / RELATIONAL WORK</span>
+      <div>
+        <h2>A sticker does the job better than "I'm not okay"</h2>
+        <p class="sub">It isn't childish. It's a fairly sophisticated social technique.</p>
+      </div>
+    </div>
+    <div class="cards stagger rv">
+      <div class="card">
+        <div class="ico">🫂</div>
+        <h3>Laughing together is enough</h3>
+        <p>Forwarding the same image completes a small collective ritual without anyone having to go first. Exam dread, exhaustion, giving up — all held inside one tilted head.</p>
+        <span class="src">Durkheim (1995) · collective effervescence</span>
+      </div>
+      <div class="card">
+        <div class="ico">🎭</div>
+        <h3>Seen, without confessing</h3>
+        <p>A joke image is far safer than saying "I'm barely holding it together". Humour leaves a way out for you and for them.</p>
+        <span class="src">Goffman (1959) · self-presentation</span>
+      </div>
+      <div class="card">
+        <div class="ico">🫥</div>
+        <h3>Too many people, so keep it light</h3>
+        <p>Friends, family, classmates and strangers share one feed; a sincere sentence is hard to aim at just one person. A sticker becomes the safest register.</p>
+        <span class="src">Davis &amp; Jurgenson (2014) · context collapse</span>
+      </div>
+    </div>
+
+    <div class="sticker-row rv">
+      <div>
+        <img src="assets/failed-exam.gif" alt="..." class="user-img">
+        <p class="sticker-cap">"That exam is done 🐲"</p>
+      </div>
+      <div>
+        <img src="assets/wipe-out.gif" alt="..." class="user-img">
+        <p class="sticker-cap">"Don't talk to me today"</p>
+      </div>
+      <div>
+        <img src="assets/there-there.gif" alt="..." class="user-img">
+        <p class="sticker-cap">"Pat pat. Tomorrow."</p>
+      </div>
+    </div>
+
+    <p class="note rv"><b>But the same image means something else somewhere else.</b> Costa (2018) reminds us that affordances are shaped in practice, not fixed by technology alone; Zelizer's (2005) "relational work" puts it more plainly: the same forward means care between friends, while inside a commercial chatbot it can serve a very different purpose. Research on dating apps likewise shows platforms reorganising intimate interaction through market logics without removing emotional uncertainty (Bandinelli &amp; Gandini, 2022). So we treat Nailoong as <b>meaningful social interaction</b>, not simply a hook for harvesting information. The real question is what happens when that relational practice moves into a system that measures and predicts its users — which is exactly what the live demo below does.</p>
+  </div>
+</section>
+
+<!-- 04 · LIVE DEMO (the app) -->
+<section class="sec app-sec" id="simulator">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">03 / LIVE DEMO</span>
+      <div>
+        <h2>Try one evening with Nailoong</h2>
+        <p class="sub">Type something, or tap a mood. The right-hand panel logs what the platform sees — as it happens.</p>
+      </div>
+    </div>
+
+    <div class="sim-grid rv in">
+      <!-- LEFT: chat -->
+      <div class="app-card">
+        <div class="app-bar">
+          <span class="app-title"><span class="live-dot"></span> Nailoong Comfort · v20.46</span>
+          <span class="app-meta" id="session-id">session —</span>
+        </div>
+        <div class="chat-log" id="chat-log" aria-live="polite">
+          <div class="sys">SESSION STARTED · 21:47 HKT · FREE TIER WITH PERSONALISED TRACKING</div>
+          <div class="msg them"><span class="avatar" aria-hidden="true"></span><span class="bubble">hey. rough one?</span></div>
+        </div>
+        <div class="chips" id="chips" aria-label="Quick moods">
+          <button class="chip" type="button" data-mood="exam">The exam went badly</button>
+          <button class="chip" type="button" data-mood="tired">I'm wiped out</button>
+          <button class="chip" type="button" data-mood="read">They left me on read</button>
+          <button class="chip" type="button" data-mood="fine">I'm fine, actually</button>
+        </div>
+        <form class="composer" id="composer">
+          <input id="composer-input" type="text" maxlength="160" autocomplete="off" placeholder="Say something to Nailoong..." aria-label="Your message">
+          <button class="send" type="submit">Send ↑</button>
+        </form>
+      </div>
+
+      <!-- RIGHT: data panel -->
+      <div class="app-card">
+        <div class="app-bar">
+          <span class="app-title">PLATFORM VIEW</span>
+          <span class="app-meta" id="point-count">0 data points</span>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Platform view tabs">
+          <button class="tab active" type="button" data-tab="trail" role="tab" aria-selected="true">Live trail</button>
+          <button class="tab" type="button" data-tab="profile" role="tab" aria-selected="false">Inferred profile</button>
+          <button class="tab" type="button" data-tab="uses" role="tab" aria-selected="false">Downstream uses</button>
+        </div>
+
+        <div class="panel active" data-panel="trail" role="tabpanel">
+          <div class="counters">
+            <div class="counter"><b id="c-l1">0</b><span>L1 · given</span></div>
+            <div class="counter"><b id="c-l2">0</b><span>L2 · left behind</span></div>
+            <div class="counter"><b id="c-l3">0</b><span>L3 · inferred</span></div>
+          </div>
+          <div class="trail" id="trail">
+            <div class="trail-empty" id="trail-empty">Nothing logged yet. Send a message and watch this column fill.</div>
+          </div>
+        </div>
+
+        <div class="panel" data-panel="profile" role="tabpanel">
+          <p class="panel-note">This profile was never written by you. It is assembled from timing, wording and repetition — and it can be wrong.</p>
+          <div class="metric"><span>Stress signal</span><div class="bar"><i id="bar-stress"></i></div><em id="val-stress">0%</em></div>
+          <div class="metric"><span>Prefers reassurance</span><div class="bar"><i id="bar-reassure"></i></div><em id="val-reassure">0%</em></div>
+          <div class="metric"><span>Reachable window 21:00–23:00</span><div class="bar"><i id="bar-window"></i></div><em id="val-window">0%</em></div>
+          <h4 class="panel-h">Labels attached to you</h4>
+          <div class="tags" id="profile-tags"><span class="tag-pill muted-pill">none yet</span></div>
+        </div>
+
+        <div class="panel" data-panel="uses" role="tabpanel">
+          <p class="panel-note">The raw chat log is never sold. These are the uses that can still run on top of it. Switch them off to see what "limit secondary uses" would actually mean.</p>
+          <div class="use"><span>Ad slots against predicted vulnerability</span><button class="switch on" type="button" data-use="0" aria-pressed="true"><i></i></button></div>
+          <div class="use"><span>Repeated reassurance-style content</span><button class="switch on" type="button" data-use="1" aria-pressed="true"><i></i></button></div>
+          <div class="use"><span>Profile shared with partner services</span><button class="switch on" type="button" data-use="2" aria-pressed="true"><i></i></button></div>
+          <div class="use"><span>Emotional-risk score for ranking</span><button class="switch on" type="button" data-use="3" aria-pressed="true"><i></i></button></div>
+          <p class="use-state" id="use-state">4 of 4 uses active · you cannot see or correct any of them here.</p>
+        </div>
+
+        <div class="app-foot">
+          <span>Saved locally in this browser only. Nothing is uploaded.</span>
+          <button class="link-btn" type="button" id="reset-session">↺ Reset session</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="session-strip rv in">
+      <span>You arrived at this page with a feeling. You now have <b id="arrival-count">0 data points</b> attached to it.</span>
+      <a href="#choice">Carry them into the choice ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · THREE LAYERS (sticky) -->
+<section class="sec" id="layers">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">04 / THREE LAYERS</span>
+      <div>
+        <h2>From "I sent a sticker" to "the system says what kind of person I am"</h2>
+        <p class="sub">van Dijck (2014) calls the translation of everyday life into measurable traces <i>datafication</i>. Scroll the right column.</p>
+      </div>
+    </div>
+    <div class="layers-wrap">
+      <div class="layers-sticky rv in">
+        <img src="assets/sence.png" alt="..." class="user-img">
+        <div class="sticky-state">
+          <span class="sticky-kicker">CURRENTLY READING</span>
+          <strong id="layer-indicator">L1 · What you handed over</strong>
+          <p id="layer-hint">Words, images, voice notes, that "I'm fine". The layer most easily mistaken for "all the data there is".</p>
+          <div class="sticky-dots"><i class="on" data-dot="0"></i><i data-dot="1"></i><i data-dot="2"></i></div>
+        </div>
+      </div>
+
+      <div class="layer-stack">
+        <div class="layer scroll-layer" data-layer="0">
+          <div class="lv">L1</div>
+          <div><h3>What you handed over</h3><p>The words, images, voice notes, that "I'm fine". Visible, legible, and the only layer you can usually download, correct or delete.</p></div>
+        </div>
+        <div class="layer scroll-layer" data-layer="1">
+          <div class="lv">L2</div>
+          <div><h3>What you left behind</h3><p>When you opened it, how long you stayed, the fourth night running, which line made you reply, which line you deleted. You never "said" any of it; all of it was logged.</p></div>
+        </div>
+        <div class="layer hot scroll-layer" data-layer="2">
+          <div class="lv">L3</div>
+          <div><h3>What was inferred ⚠</h3><p>An estimated stress level, a preferred comfort style, a label like "low resilience". It comes from nothing you actually said, yet it is the layer most likely to shape what you see next.</p></div>
+        </div>
+        <div class="callout"><strong>Why layer three matters:</strong> an inference can be inaccurate and still change someone's opportunities, their feed, and how others treat them. A "low resilience" score is a model's judgement, not an objective description of the student.</div>
+        <p class="note"><b>Identity gets rewritten along the way.</b> Rowland &amp; Estevens (2025) show that users understand digital identity in very different ways, with real consequences for agency and control; Bhandari &amp; Bimo (2022) call it the "algorithmized self" — identity increasingly shaped through interaction with recommendation systems. If an AI companion keeps serving one particular kind of comfort, it is taking part in shaping how you understand and express your feelings. That is also rationalisation in Weber's (1978) sense: complex emotion compressed into categories, probabilities and efficient decisions. Beer (2017) and Burrell &amp; Fourcade (2021) add that algorithmic social power sits precisely in which classifications it makes ordinary.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · INTERACTIVE CHOICE -->
+<section class="sec dark" id="choice">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">05 / THE CHOICE</span>
+      <div>
+        <h2>It looks like consent. The two options are not equivalent.</h2>
+        <p class="sub">The hypothetical question from the essay's interactive site — here you can actually click it.</p>
+      </div>
+    </div>
+
+    <div class="choice-meta rv">
+      <span class="disclaimer">Fictional demo · nothing is collected, uploaded or stored</span>
+      <span class="record" id="choice-record">Your choice history: none yet</span>
+    </div>
+    <p class="arrival rv" id="arrival-line">You arrive here with <b>0 data points</b> already generated in the demo above. Now choose a service.</p>
+
+    <div class="choice-grid rv">
+      <button class="choice" data-choice="free" type="button">
+        <span class="tick">✓ Selected</span>
+        <span class="price">HK$ 0 / MONTH</span>
+        <h3>Free comfort · with personalised tracking</h3>
+        <p>Talk to it whenever; the replies fit you better over time. The cost: it keeps learning when you're vulnerable and which kind of soothing works best.</p>
+      </button>
+      <button class="choice" data-choice="paid" type="button">
+        <span class="tick">✓ Selected</span>
+        <span class="price">HK$ __ / MONTH</span>
+        <h3>Private comfort · monthly fee</h3>
+        <p>No profiling, no ads, conversations stay on device. Provided you can afford the fee — and afford the fact that other people don't have this option.</p>
+      </button>
+    </div>
+    <p class="consent-note rv"><b>It looks like "I agree". It's closer to "I can't do otherwise".</b> Draper &amp; Turow (2019) call this feeling of having no realistic control over corporate data collection <i>digital resignation</i>; Bourdieu's (1986) account of unequal capital points to a second risk: when everyone receives the same data-rights statement, <b>privacy has quietly become a class privilege</b>.</p>
+
+    <div class="reveal" id="reveal" hidden>
+      <h3 data-reveal-title>You made a choice</h3>
+      <p class="rline" data-reveal-line></p>
+
+      <div class="reveal-flow">
+        <div class="rf"><span class="t">L1 · HANDED OVER</span><p>The sticker, the line "today was genuinely rough".</p></div>
+        <div class="rf"><span class="t">L2 · LEFT BEHIND</span><p>Fourth night running · 21:47 · stayed after this line.</p></div>
+        <div class="rf"><span class="t">L3 · INFERRED</span><p>Stress: elevated · prefers reassurance · reachable window.</p></div>
+      </div>
+
+      <div class="downstream">
+        <h4>Where that data can go next ↓</h4>
+        <ul>
+          <li>Sell ad slots against a predicted vulnerable moment (without ever selling the raw chat log)</li>
+          <li>Keep feeding the same kind of emotional content, because it works</li>
+          <li>Build a profile you never see and can't directly correct</li>
+          <li>Flow from "comfort" into purposes that have nothing to do with comfort</li>
+        </ul>
+      </div>
+
+      <div class="verdict" id="verdict" hidden>
+        <h4>So — was that choice a meaningful one?</h4>
+        <p class="qsub">The site makes the argument through the medium: it lets you choose, lays out the three layers and downstream uses, then turns back and asks you.</p>
+        <div class="answers">
+          <button class="ans" type="button" data-ans="a">Yes, I was informed</button>
+          <button class="ans" type="button" data-ans="b">Not really — neither was free</button>
+          <button class="ans" type="button" data-ans="c">Depends if I can fix the inference</button>
+        </div>
+        <p class="feedback" id="feedback" aria-live="polite"></p>
+      </div>
+
+      <button class="reset" id="reset" type="button">↺ Choose again</button>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · WHO OWNS -->
+<section class="sec" id="who">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">06 / WHO OWNS, WHO CONTROLS</span>
+      <div>
+        <h2>"Ownership" hides several unrelated claims</h2>
+        <p class="sub">Spread them out and "whoever stores the file owns it" stops being enough.</p>
+      </div>
+    </div>
+    <div class="owners rv">
+      <div class="owner"><span class="role">IP HOLDER</span><h3>Character rights holder</h3><p>Controls licensed artwork and use of the image. That does not automatically give them rights over a student's emotional history.</p><span class="tag">Controls: the image</span></div>
+      <div class="owner"><span class="role">PLATFORM</span><h3>The platform</h3><p>Holds the messages and behavioural records, and decides what the interface looks like and what counts as "a successful comfort".</p><span class="tag">Controls: storage &amp; setting</span></div>
+      <div class="owner"><span class="role">AI VENDOR</span><h3>The AI company</h3><p>Owns the models, methods and inference rules. It's hard to find out how a label like "low resilience" was actually calculated.</p><span class="tag">Controls: interpretation</span></div>
+      <div class="owner me"><span class="role">YOU</span><h3>You</h3><p>Care most about privacy, and have the strongest reason to question how sensitive information is used — yet can usually only download a chat log and delete an account.</p><span class="tag">Should hold: an enforceable bundle of powers</span></div>
+    </div>
+    <blockquote class="pull rv" style="margin-top:32px">Current European data protection offers <mark>qualified rights of access, erasure, objection and portability</mark> — not an unrestricted property title over all personal information (EDPB, n.d.). <span>You can delete the account; you can't necessarily find out how old messages fed a profile.</span></blockquote>
+    <p class="note rv"><b>Two more hurdles:</b> Andrejevic's (2014) "big data divide" is not about who has data, but about who analyses and who is analysed; Nissenbaum's (2010) <i>contextual integrity</i> adds that a sentence shared for comfort shouldn't automatically become material for commercial targeting — whether a data flow is legitimate depends on its context, actors and purposes, not on a box labelled "I agree". Inferred information linked to a person may itself fall within data protection rules; the hard part has always been <b>making those rights effective inside a complex technical system</b>.</p>
+  </div>
+</section>
+
+<!-- 08 · COST -->
+<section class="sec tinted" id="cost">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">07 / THE COST OF COMFORT</span>
+      <div>
+        <h2>We shouldn't assume all AI comfort is harmful. But a free service still needs a business model.</h2>
+        <p class="sub">It can genuinely help someone open up or find support — and still be very good business.</p>
+      </div>
+    </div>
+    <div class="cost-grid">
+      <img src="assets/compare.gif" alt="..." class="user-img">
+      <div class="cost-list rv">
+        <div class="cost-item"><h3>Platforms build value through control of infrastructure and data</h3><p>Even if the raw chat log is never sold, the platform can sell advertising opportunities against a predicted vulnerable moment. <span class="src">Srnicek (2017) · Zuboff (2019) · Couldry &amp; Mejias (2019)</span></p></div>
+        <div class="cost-item"><h3>Who creates the value, who gets the return</h3><p>Sending stickers, writing messages, replying to others: things done for personal reasons also produce economic value for someone else. That doesn't make every act of friendship the same as paid employment — it means genuine care and commercial extraction can happen inside the same exchange. <span class="src">Marx (1976) · Fuchs (2014) · Zelizer (2005)</span></p></div>
+        <div class="cost-item"><h3>The person being assessed changes first</h3><p>Once you suspect the chat is assigning an emotional-risk score, you may hide certain feelings or learn to write for a better score. The system is then shaping expression, not merely observing it. <span class="src">Foucault (1977)</span></p></div>
+        <div class="cost-item"><h3>Classification follows old inequalities</h3><p>Commercial search and automated classification in public services have already encoded racial and gender hierarchies and amplified harm. These studies don't prove a 2046 chatbot will discriminate, but they show why emotional predictions need scrutiny. <span class="src">Noble (2018) · Eubanks (2018) · Bourdieu (1986)</span></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 · MEANINGFUL OWNERSHIP -->
+<section class="sec" id="own">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">08 / MEANINGFUL OWNERSHIP</span>
+      <div>
+        <h2>Treat it as a bundle of enforceable powers, not a label</h2>
+        <p class="sub">Tick through them to see what that bundle should actually contain (demo only, nothing saved).</p>
+      </div>
+    </div>
+    <div class="bundle rv">
+      <button class="check" type="button" aria-checked="false"><span class="box">✓</span><span><h3>Access and correct important inferences</h3><p>Not just the words you typed, but the L3 judgements about "who you are".</p></span></button>
+      <button class="check" type="button" aria-checked="false"><span class="box">✓</span><span><h3>Limit secondary uses</h3><p>Something said for comfort shouldn't flow by default into ad targeting, profile trading or other contexts.</p></span></button>
+      <button class="check" type="button" aria-checked="false"><span class="box">✓</span><span><h3>Contest harmful automated decisions</h3><p>When a score affects what you see or how you're treated, there must be someone to appeal to and something to change.</p></span></button>
+      <button class="check" type="button" aria-checked="false"><span class="box">✓</span><span><h3>Leave without losing basic support</h3><p>Exiting a service shouldn't cost you the only place you had to talk.</p></span></button>
+      <button class="check" type="button" aria-checked="false"><span class="box">✓</span><span><h3>Independent oversight that actually checks</h3><p>A third party needs to verify that platforms honour these choices, rather than just reading their own statement.</p></span></button>
+      <button class="check" type="button" aria-checked="false"><span class="box">✓</span><span><h3>Account for everyone in the conversation</h3><p>Shared conversations carry other people's interests; they can't be sliced up by whose account it was.</p></span></button>
+    </div>
+    <p class="note rv"><b>One less cheerful caveat:</b> even with a future Web3 data wallet or a personal-data marketplace, the underlying power imbalance doesn't automatically disappear <b>as long as platforms still control the algorithms that interpret feelings</b>. This site is part of the argument too — it lets you talk, logs what that talk becomes, then asks whether your choices counted. It's a fictional demonstration and needs no real sensitive information.</p>
+  </div>
+</section>
+
+<!-- 10 · CONCLUSION -->
+<section class="sec closing" id="end">
+  <div class="wrap closing-grid">
+    <div class="rv in">
+      <span class="sec-num">09 / CONCLUSION</span>
+      <p class="big-quote">By 2046, <span>playful comfort</span> may also become a detailed inference about who you are.</p>
+      <p>The small Nailoong scene links self-presentation, relational work, algorithmic identity, discipline, exploitation and inequality. Our conclusion: <b>without practical control over interpretation and use, data ownership has limited meaning.</b></p>
+      <p>Perhaps there is only one question worth asking: can people be caught, without handing over what their feelings are eventually made to mean?</p>
+      <div class="cta-row">
+        <a class="btn btn-light" href="#simulator">↑ Replay the demo</a>
+        <a class="btn btn-ghost" href="#top">Back to top</a>
+      </div>
+      <details>
+        <summary>Theory map (who this site borrows from)</summary>
+        <div class="theory">
+          <span>Durkheim · collective effervescence</span><span>Goffman · self-presentation</span><span>Davis &amp; Jurgenson · context collapse</span>
+          <span>Costa · affordances-in-practice</span><span>Zelizer · relational work</span><span>Bandinelli &amp; Gandini · marketised love</span>
+          <span>van Dijck · datafication</span><span>Rowland &amp; Estevens · digital identity</span><span>Bhandari &amp; Bimo · algorithmized self</span>
+          <span>Weber · rationalisation</span><span>Beer · social power of algorithms</span><span>Burrell &amp; Fourcade · society of algorithms</span>
+          <span>EDPB · data subject rights</span><span>Andrejevic · big data divide</span><span>Nissenbaum · contextual integrity</span>
+          <span>Srnicek · platform capitalism</span><span>Zuboff · surveillance capitalism</span><span>Couldry &amp; Mejias · costs of connection</span>
+          <span>Marx / Fuchs · value &amp; digital labour</span><span>Foucault · discipline</span><span>Noble / Eubanks · classification &amp; inequality</span>
+          <span>Bourdieu · forms of capital</span><span>Draper &amp; Turow · digital resignation</span>
+        </div>
+      </details>
+    </div>
+    <!-- IMAGE SLOT 05: replace with <img src="assets/closing.png" alt="..." class="user-img"> -->
+    <div class="img-slot mid rv in" data-slot="05">
+      <div class="blob" aria-hidden="true"></div>
+      <span class="slot-tag">IMAGE SLOT 05</span>
+      <span class="slot-title">The closing image</span>
+      <span class="slot-hint">One image to land the feeling — or the sticker you most want to leave on this page.</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b>Image slots</b> &nbsp;·&nbsp; 01 hero &nbsp;·&nbsp; 02a/02b/02c sticker trio &nbsp;·&nbsp; 03 layers &nbsp;·&nbsp; 04 free/paid &nbsp;·&nbsp; 05 closing<br>
+      All marked with <code>data-slot</code>; swap the whole <code>.img-slot</code> block for <code>&lt;img class="user-img"&gt;</code>. To send stickers inside the chat, fill in <code>STICKER_ASSETS</code> in <code>script.js</code>.
+    </div>
+    <div class="foot-right">
+      <span id="foot-session">Session: 0 data points</span>
+      <button class="link-btn light" type="button" id="clear-all">Clear local data</button>
+      <span>Fictional scenario · course project · no third-party images embedded</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js" defer></script>
+</body>
+</html>
